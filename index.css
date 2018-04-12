@@ -101,7 +101,7 @@ h2{
     display: inline-block;
     color: #429aec;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
     font-size: 1.3rem;
 }
@@ -181,7 +181,7 @@ p{
 }
 .card{
 	position: relative;
-	width: 75%;
+	width: 85%;
 	background-color: #FFFFFF;
 	top:3vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
@@ -221,7 +221,7 @@ h4{
 	font-family: 'Abel';
 	font-size: 1.2rem;
 	color:#363434;
-	width: 70%;
+	width: 85%;
 	margin-bottom:3vh;
 	padding: 2vh;
     text-align: justify;
@@ -237,10 +237,9 @@ h4{
 	border-radius:5px
 }
 .project_image{
-	display: flex;
 	background:url(project.jpg);
 	max-height: 100%;
-	width: 20vw;
+	width: 30vw;
 }
 .project_details{
 	display: flex;
@@ -256,7 +255,7 @@ h4{
 	background-color: #FFFFFF;
 	display: flex;
 	margin:2%;
-	width: 75%;
+	width: 85%;
 	justify-content: center;
 	flex-wrap: wrap;
 }
@@ -274,8 +273,8 @@ form {
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 3vh;
-	margin-left: 30vw;
-	margin-right: 30vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
 }
 input, textarea {
 	border: none;
@@ -351,13 +350,15 @@ h1{
 @media screen and (max-width: 872px) {
   .topnav a:not(:last-child) {display: none;}
   .topnav a.icon {
-    float: right;
-    display: flex;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
   }
   .topnav{
   	margin:0;
-  	width: 7%;
+  	width: 10%;
   	float: right;
+  	border-radius: 0px;	
   }
   
 }
