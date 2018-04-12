@@ -375,3 +375,12 @@ h1{
     text-align: center;
   }
  }
+
+ @media screen and (max-width: 520px) {
+  
+  	.project_image{display: none}
+  	.projects{width: 85%}
+  	.project_details{
+  		width: 100%
+  	}
+ }
