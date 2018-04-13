@@ -1,115 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>My Portfolio</title>
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="index.css">
-    <!--Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<div id="image">
-		<div class="overlay">
-			<div class="topnav" id="myTopnav">
-			  <a href="#About">About</a>
-			  <a href="#Experience">Experience</a>
-			  <a href="#Education">Education</a>
-			  <a href="#Projects">Projects</a>
-			  <a href="#Interests">Interests</a>
-			  <a href="#Contact">Contact</a>
-			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	    <title>My Portfolio</title>
+	    <!--Stylesheets-->
+	    <link rel="stylesheet" href="index.css">
+	    <!--Fonts-->
+	    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id="image">
+			<div class="overlay">
+				<div class="topnav" id="myTopnav">
+				  <a href="#about">About</a>
+				  <a href="#experience">Experience</a>
+				  <a href="#education">Education</a>
+				  <a href="#projects">Projects</a>
+				  <a href="#interests">Interests</a>
+				  <a href="#contact">Contact</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+				<img src="img_avatar.png" alt="Avatar" style="width:200px; border-radius: 50%; margin: 0 auto; display: block;padding-top: 2vh">
+				<h3>Jaskaran Singh</h3>
+				<h5>Software Engineer</h5>
+				<button class="btn1">Download Resume</button>
 			</div>
-			<img src="img_avatar.png" alt="Avatar" style="width:200px; border-radius: 50%; margin: 0 auto; display: block;padding-top: 2vh">
-			<h3>Jaskaran Singh</h3>
-			<h5>Software Engineer</h5>
-			<button class="btn1">Download Resume</button>
 		</div>
-	</div>
-	<div class="Info">
-		<div class="heading">About Me</div>
-		<p style="text-align: justify;width: 85%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</p>
-	</div>
-	<div class="Info_change">
-		<div class="heading">Experience</div>
-		 		<div class="card">
-			<h4>Infosys Ltd.</h4>
-			<div class="subheading">Systems Engineer</div>
-	 		<div class="date">September 2015 – September 2016</div>
-			<div class="p1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
+		<div class="Info" id="about">
+			<div class="heading">About Me</div>
+			<p style="text-align: justify;width: 85%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</p>
 		</div>
-	</div> 
-	<div class="Info">
-		<div class="heading">Education</div>
-		<div class="education"><h2>Indraprasth University,Delhi</h2><div class="qualification">Bachelor of Science in Computer Science (Sept 2016 - Sept 2017)</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
-		<div class="education">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
-	</div>
-	<div class="Info_change">
-		<div class="heading">Projects</div>
-		<div class="projects">
-			<div class="project_details">Project Name
+		<div class="Info_change" id="experience">
+			<div class="heading">Experience</div>
+			 		<div class="card">
+				<h4>Infosys Ltd.</h4>
+				<div class="subheading">Systems Engineer</div>
+		 		<div class="date">September 2015 – September 2016</div>
 				<div class="p1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
-				<a href="#"><b>View Project</b></a>
 			</div>
-			<div class="project_image"></div>
+		</div> 
+		<div class="Info" id="education">
+			<div class="heading">Education</div>
+			<div class="education"><h2>Indraprasth University,Delhi</h2><div class="qualification">Bachelor of Science in Computer Science (Sept 2016 - Sept 2017)</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
+			<div class="education">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
 		</div>
-		<div class="projects">
-			<div class="project_details">Project Name
-				<div class="p1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
-				<a href="#"><b>View Project</b></a>
+		<div class="Info_change" id="projects">
+			<div class="heading">Projects</div>
+			<div class="projects">
+				<div class="project_details">Project Name
+					<div class="p1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
+					<a href="#"><b>View Project</b></a>
+				</div>
+				<div class="project_image"></div>
 			</div>
-			<div class="project_image"></div>
+			<div class="projects">
+				<div class="project_details">Project Name
+					<div class="p1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.</div>
+					<a href="#"><b>View Project</b></a>
+				</div>
+				<div class="project_image"></div>
+			</div>
 		</div>
-	</div>
-	<div class="Info">
-		<div class="heading">Interests</div>
-			<div class="interestsdiv">
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
-				<div class="interests">abcefgh</div>
+		<div class="Info" id="interests">
+			<div class="heading">Interests</div>
+				<div class="interestsdiv">
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
+					<div class="interests">abcefgh</div>
 
-			</div>	
+				</div>	
+			</div>
 		</div>
-	</div>
-	<form>
-		<h1>Get In Touch</h1>
-		<div class="form-element">
-			<input id="email" type="email" placeholder="Email Address" required>
+		<form id="contact">
+			<h1>Get In Touch</h1>
+			<div class="form-element">
+				<input id="email" type="email" placeholder="Email Address" required>
+			</div>
+			<div class="form-element">
+				<textarea id="address" type="text" placeholder="Message" rows="5"></textarea>
+			</div>
+			<div class="form-element">
+				<button class="btn" type="submit">Send</button>
+			</div>
+		</form>
+		<div class="footer">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-github"></a>
+			<a href="#" class="fa fa-stack-overflow"></a>
 		</div>
-		<div class="form-element">
-			<textarea id="address" type="text" placeholder="Message" rows="5"></textarea>
-		</div>
-		<div class="form-element">
-			<button class="btn" type="submit">Send</button>
-		</div>
-	</form>
-	<div class="footer">
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-google"></a>
-		<a href="#" class="fa fa-github"></a>
-		<a href="#" class="fa fa-stack-overflow"></a>
-	</div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-        document.getElementById("image").style.height = "140vh";
-    } else {
-        x.className = "topnav";
-        document.getElementById("image").style.height = "100vh";
-    }
-}
-</script>	
-</body>
-</html>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if(window.innerHeight > window.innerWidth){
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	        document.getElementById("image").style.height = "140vh";
+	    } else {
+	        x.className = "topnav";
+	        document.getElementById("image").style.height = "100vh";
+	    }
+	    }
+	    else{
+	    	 if (x.className === "topnav") {
+	        x.className += " responsive";
+	        document.getElementById("image").style.height = "190vh";
+	    } else {
+	        x.className = "topnav";
+	        document.getElementById("image").style.height = "130vh";
+	    }
+	    }
+
+	}
+	</script>	
+	</body>
+	</html>
