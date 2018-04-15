@@ -8,13 +8,15 @@ body {
 #image{
 	position:relative;
 	border-style: none;
+	resize: both;
 	height:100vh;
+	max-height: 100%
 	background:url(lead-bg.jpg);
 	background-size:cover;
-	text-align: center
+	text-align: center;
 }
 .overlay{
-	position:absolute;
+	position:relative;
 	height:100%;
 	width:100%;
 	top:0;
@@ -22,6 +24,17 @@ body {
 	background:rgba(33,125,187,0.8);
 /* 	z-i ndex:1;
  */}
+
+ .profile_image{
+	max-width: 100%;
+	height:auto;
+	width:200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	padding-top: 2vh;
+ }
+
 h3{
 	font-family: 'Lato';
 	color: #FFFFFF;
@@ -59,6 +72,7 @@ h2{
 }
 
 .btn1{
+	position: relative;
 	font-family: 'Abel';
 	background-color: transparent;
 	font-size: 1.2rem;
@@ -70,6 +84,7 @@ h2{
 	outline: none;
 	display:block;
 	margin: 4vh auto;
+	overflow: hidden;
 }
 .btn1:hover{
 	background-color: #FFFFFF;
@@ -174,10 +189,14 @@ p{
 }
 .p1{
 	font-family: 'Abel';
-	font-size: 1rem;
+	font-size: 1.2rem;
+	color:#080808; 	
+	font-weight: 500;
 	overflow:hidden;
 	color:#363434;
 	white-space: pre-line;
+	padding: 2vh;
+	text-align: justify;
 }
 .card{
 	position: relative;
@@ -196,6 +215,7 @@ p{
 	overflow:hidden;
 	color:#363434;
 	margin-bottom: 2vh;
+	text-align: justify;
 }
 h4{
 	position: relative;	
@@ -236,10 +256,17 @@ h4{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 	border-radius:5px
 }
-.project_image{
-	background:url(project.jpg);
+.project_image1{
+	background:url(project1.png);
 	max-height: 100%;
 	width: 30vw;
+	background-size:cover;
+}
+.project_image2{
+	background:url(project2.png);
+	max-height: 100%;
+	width: 30vw;
+	background-size:cover;
 }
 .project_details{
 	display: flex;
@@ -378,7 +405,8 @@ h1{
 
  @media screen and (max-width: 520px) {
   
-  	.project_image{display: none}
+  	.project_image1{display: none}
+  	.project_image2{display: none}
   	.projects{width: 85%}
   	.project_details{
   		width: 100%
@@ -386,11 +414,9 @@ h1{
  }
 
  @media screen and (orientation:landscape) {
- 	#image{
-		height: 130vh;
-	}
-	.btn1{
+ 	.btn1{
 		width: 35vh;
 		height: 15vh
 	}
 }
+
